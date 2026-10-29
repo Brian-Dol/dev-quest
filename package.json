@@ -1,0 +1,12 @@
+{
+  "name": "dev-quest",
+  "version": "1.0.0",
+  "description": "A Mario-style platformer that walks through the entire software development lifecycle.",
+  "type": "module",
+  "scripts": {
+    "start": "node scripts/serve.js",
+    "test": "node --test",
+    "lint": "node scripts/check-syntax.js"
+  },
+  "license": "MIT"
+}

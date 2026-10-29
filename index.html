@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+  <title>Dev Quest · Play through the Software Development Lifecycle</title>
+  <meta name="description" content="Dev Quest is a Mario-style platformer that teaches the full software development lifecycle, from requirements to retirement.">
+  <meta property="og:title" content="Dev Quest: a platformer through the SDLC">
+  <meta property="og:description" content="Run, jump and squash bugs through 12 worlds: requirements, design, build, test, deploy, support and more.">
+  <meta property="og:image" content="assets/banner.svg">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <div class="frame">
+      <canvas id="game" aria-label="Dev Quest game canvas" tabindex="0"></canvas>
+      <div class="toolbar">
+        <button id="pause" aria-label="Pause">⏸</button>
+        <button id="mute" aria-label="Toggle sound">🔊</button>
+      </div>
+    </div>
+    <div class="touch" aria-hidden="true">
+      <div class="dpad">
+        <button data-key="left">◀</button>
+        <button data-key="right">▶</button>
+      </div>
+      <div class="actions">
+        <button data-key="confirm">OK</button>
+        <button data-key="jump" class="big">JUMP</button>
+      </div>
+    </div>
+    <p class="hint">← → / A D to move · ↑ / W / Space to jump · Esc to pause · M to mute</p>
+    <noscript>This game needs JavaScript enabled.</noscript>
+  </main>
+  <script type="module" src="js/game.js"></script>
+</body>
+</html>
